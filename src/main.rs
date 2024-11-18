@@ -80,6 +80,7 @@ fn main() {
 	let mut rgb = Vec::from(pixel.rgb);
 	let block_channel = rgb.remove(block_colour.into_idx());
 	let other_sum = rgb[0] + rgb[1];
+	//probably a better way to do this
 	if block_channel > other_sum {
 	    checked += 1;
 	}
